@@ -27,7 +27,7 @@
       >
         <!-- banner text -->
         <div>
-          <h1 class="text-[40px] md:text-[70px] font-bold">
+          <h1 class="text-6xl md:text-[70px] font-bold">
             It's good <br />
             tea time at The <br />
             Tea House
@@ -67,7 +67,7 @@
     <!-- main section -->
     <main class="p-4">
       <!-- product section -->
-      <section class="max-w-[1200px] mx-auto mt-36 text-center">
+      <section class="max-w-[1200px] p-2 mx-auto mt-36 text-center">
         <h2 class="text-[45px] font-semibold mt-5">Our Featured Products</h2>
         <p class="text-base font-medium text-[#777777] max-w-4xl mx-auto">
           There are many variations of passages of Lorem Ipsum available, but
@@ -145,7 +145,7 @@
 
       <!-- fresh product section   -->
       <section
-        class="max-w-[1200px] mx-auto mt-32 flex flex-col md:flex-row items-center gap-12"
+        class="max-w-[1200px] p-2 mx-auto mt-32 flex flex-col md:flex-row items-center gap-12"
       >
         <div class="flex-1 grid grid-cols-2 grid-rows-3 gap-7">
           <div
@@ -192,7 +192,7 @@
       </section>
 
       <!-- event section -->
-      <section class="max-w-[1200px] mx-auto mt-14 md:mt-36">
+      <section class="max-w-[1200px] mx-auto mt-14 md:mt-36 p-2">
         <div class="text-center w-4/5 mx-auto">
           <h2 class="text-5xl font-black">News & Events</h2>
           <p class="text-base font-medium text-[#777777] mt-5 mb-12">
@@ -260,35 +260,76 @@
       </section>
 
       <!-- client section -->
-      <section
-        class="max-w-[1200px] mx-auto mt-36 rounded-xl flex flex-col md:flex-row items-center gap-12 p-8 md:p-20 bg-gradient-to-r from-orange-400 to-red-600"
-      >
-        <!-- text section -->
-        <div class="flex-1">
-          <h2 class="text-4xl font-bold text-white md:w-3/4">
-            Meet Our Super Clients
-          </h2>
-          <p class="text-base font-light text-white mt-5 mb-7 w-5/6">
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form, by injected
-            humour, or randomised words which don't look even slightly
-            believable.
-          </p>
-          <button
-            class="px-4 py-2 rounded-md text-orange-400 font-semibold bg-white"
-          >
-            Show All
-          </button>
-        </div>
+      <section class="p-2">
+        <div
+          class="max-w-[1200px] mx-auto mt-16 md:mt-36 rounded-xl flex flex-col md:flex-row items-center gap-12 p-8 md:p-20 bg-gradient-to-r from-orange-400 to-red-600"
+        >
+          <!-- text section -->
+          <div class="flex-1">
+            <h2 class="text-4xl font-bold text-white md:w-3/4">
+              Meet Our Super Clients
+            </h2>
+            <p class="text-base font-light text-white mt-5 mb-7 w-5/6">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable.
+            </p>
+            <button
+              class="px-4 py-2 rounded-md text-orange-400 font-semibold bg-white"
+            >
+              Show All
+            </button>
+          </div>
 
-        <!-- card section -->
+          <!-- card section -->
 
-        <div class="flex-1 relative">
-          <!-- top card -->
+          <div class="flex-1 relative">
+            <!-- top card -->
 
-          <div class="-left-16 z-1 absolute top-32 hidden md:visible">
+            <div class="-left-16 z-1 absolute top-32 hidden md:block">
+              <div
+                class="bg-white px-12 py-10 rounded-lg relative -right-12 w-96"
+              >
+                <div class="absolute inset-0 -top-7 -left-7">
+                  <img
+                    src="./images/client.png"
+                    alt=""
+                    class="bg-white p-1 rounded-full"
+                  />
+                </div>
+                <p class="text-base font-light text-[#777777] mb-5">
+                  We are providing the best and suitable home insurance services
+                  for the people who are interested to treatment
+                </p>
+
+                <h3 class="font-medium">Ilham Yuda</h3>
+                <p class="text-base font-medium text-gray-400">Businessman</p>
+              </div>
+            </div>
+
+            <!-- first card -->
             <div
-              class="bg-white px-12 py-10 rounded-lg relative -right-12 w-96"
+              class="md:opacity-40 bg-white px-12 py-10 rounded-lg relative md:w-5/6 md:-right-12"
+            >
+              <div class="absolute inset-0 -top-7 -left-7">
+                <img
+                  src="./images/client.png"
+                  alt=""
+                  class="bg-white p-1 rounded-full"
+                />
+              </div>
+              <p class="text-base font-light text-[#777777] mb-5">
+                We are providing the best and suitable home insurance services
+                for the people who are interested to treatment
+              </p>
+
+              <h3 class="font-medium">Ilham Yuda</h3>
+              <p class="text-base font-medium text-gray-400">Businessman</p>
+            </div>
+            <!-- second card -->
+            <div
+              class="opacity-40 bg-white px-12 py-10 rounded-lg relative w-5/6 mt-12 -right-12 hidden md:block"
             >
               <div class="absolute inset-0 -top-7 -left-7">
                 <img
@@ -306,59 +347,20 @@
               <p class="text-base font-medium text-gray-400">Businessman</p>
             </div>
           </div>
-
-          <!-- first card -->
-          <div
-            class="md:opacity-40 bg-white px-12 py-10 rounded-lg relative md:w-5/6 md:-right-12"
-          >
-            <div class="absolute inset-0 -top-7 -left-7">
-              <img
-                src="./images/client.png"
-                alt=""
-                class="bg-white p-1 rounded-full"
-              />
-            </div>
-            <p class="text-base font-light text-[#777777] mb-5">
-              We are providing the best and suitable home insurance services for
-              the people who are interested to treatment
-            </p>
-
-            <h3 class="font-medium">Ilham Yuda</h3>
-            <p class="text-base font-medium text-gray-400">Businessman</p>
-          </div>
-          <!-- second card -->
-          <div
-            class="opacity-40 bg-white px-12 py-10 rounded-lg relative w-5/6 mt-12 -right-12 hidden md:visible"
-          >
-            <div class="absolute inset-0 -top-7 -left-7">
-              <img
-                src="./images/client.png"
-                alt=""
-                class="bg-white p-1 rounded-full"
-              />
-            </div>
-            <p class="text-base font-light text-[#777777] mb-5">
-              We are providing the best and suitable home insurance services for
-              the people who are interested to treatment
-            </p>
-
-            <h3 class="font-medium">Ilham Yuda</h3>
-            <p class="text-base font-medium text-gray-400">Businessman</p>
-          </div>
         </div>
       </section>
     </main>
 
     <!-- footer -->
     <footer
-      class="container mx-auto mt-32 p-32 bg-[linear-gradient(270deg,rgba(255,0,0,0.10)_0%,rgba(255,137,56,0.10)_100%)]"
+      class="container mx-auto mt-16 md:mt-32 md:p-32 p-8 bg-[linear-gradient(270deg,rgba(255,0,0,0.10)_0%,rgba(255,137,56,0.10)_100%)]"
     >
       <div class="max-w-[1200px] mx-auto">
         <!-- first section -->
         <div class="flex items-center justify-between">
           <img src="./images/cup.png" class="max-w-20" alt="" />
           <div class="flex items-center gap-10">
-            <h3>Ready to get strated?</h3>
+            <h3 class="hidden md:block">Ready to get strated?</h3>
             <button
               class="px-8 py-4 rounded-lg text-white font-bold bg-gradient-to-r from-[#FF8938] to-[#FF0000]"
             >
@@ -368,7 +370,7 @@
         </div>
 
         <!-- second section -->
-        <div class="flex items-start justify-between mt-28">
+        <div class="flex items-start justify-between mt-12 md:mt-28 flex-wrap">
           <div>
             <p class="text-xl font-semibold mb-3">Quick Links</p>
             <ul class="text-base font-normal text-[#494949] space-y-4">
@@ -394,7 +396,7 @@
               <li>Contact Us</li>
             </ul>
           </div>
-          <div>
+          <div class="my-5 md:m-0">
             <h2>Subscribe to our newsletter</h2>
           </div>
         </div>
